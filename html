@@ -1,0 +1,21 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>random</title>
+	<input type="button" name="122" value="426" id="btn1">
+</head>
+<body>
+</body>
+</html>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+	var a;
+	$(document).ready(function(){
+		$("#btn1").on("click",function(){
+			a=getRandom(100);
+			console.log(a);
+			$("#btn1").attr("value",a)
+		});
+	});
+	function getRandom(n){return Math.floor(Math.random()*n+1)};
+</script>
